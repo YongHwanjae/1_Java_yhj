@@ -47,6 +47,8 @@ public class VariableExample5 {
 		System.out.println("줄 바꼈나요??");
 		
 		
+		System.out.println("내가 추가한 내용");
+		
 		
 	}
 }
