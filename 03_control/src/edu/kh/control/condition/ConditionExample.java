@@ -49,7 +49,6 @@ public class ConditionExample {
 	}
 	
 	
-	
 	public void ex2() {
 		System.out.println("[if문 예시 2]");
 		
