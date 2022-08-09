@@ -33,7 +33,6 @@ public class OperatorPractice4 {
 		String result = ((input1 >=40) && (input2 >=40) && (input3 >=40) && (input1 + input2 + input3) / 3 >= 60) ? "합격" : "불합격";
 		System.out.println(result);
 
-System.out.println("＋⒂");
 	}
 	
 }
