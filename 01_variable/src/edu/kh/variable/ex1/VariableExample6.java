@@ -56,13 +56,6 @@ public class VariableExample6 {
 		
 		
 		System.out.println(name + "님 오늘 하루도 고생하셨습니다.");
-		
-		
-		
-		
-		
-		
-		
-		
+																
 	}
 }
