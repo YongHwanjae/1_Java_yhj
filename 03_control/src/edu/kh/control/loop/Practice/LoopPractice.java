@@ -49,8 +49,7 @@ public class LoopPractice {
 				System.out.print(i + " = ");
 			}
 			else { System.out.print(i+ " + ");
-		}   
-		 
+		}   sum+=i;
 		};
 		
 		
@@ -144,13 +143,13 @@ public class LoopPractice {
 		
 		System.out.print("정수 입력 : ");
 		int num = sc.nextInt();
-		
-		for(int row = 1; row<=num; row++) {
-	
-		for(int col = 1; col<=row; col++) {
-		System.out.printf("%s","*" );}
-		System.out.println();}
-	}
+		for(int i=0; i<5; i++) {
+			for(int j=0; j<4-i; j++)
+				System.out.print(" ");			
+		 for(int j=0; j<i+1; j++) {
+			System.out.print("*");}			
+		System.out.println();		}
+		}
 	public void practice10() {
 		Scanner sc = new Scanner(System.in);
 		
