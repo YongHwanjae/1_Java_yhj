@@ -9,7 +9,7 @@ public class VariableExample5 {
 		// -> 바로가기 키 -> 사용안함 
 		
 		// ctrl + alt + 방향키 위 또는 아래 : 해당 줄 복사
-		
+	
 		/* 출력 메서드
 		 * 
 		 * System.out.print("내용") 
