@@ -220,25 +220,49 @@ public class BranchExample {
 			
 		int g = (int)(Math.random() * 3);
 				
+		
 		Scanner sc = new Scanner(System.in);
 		
-		
-		int count = 0;
-		
-		for(int i = 1 ; i <=3; i++) {
-			count++;
-		System.out.print(count + "번째 게임");
+		int count = 1;
 		
 		
-		System.out.print("\n 가위/바위/보 중 하나를 입력해주세요 : ");
-		String str = sc.next(); 
+	for(int i = 0; i<=3 ;  i++);{System.out.println(count + "번째 게임");		
 		
-		if(g==0) { System.out.println("컴퓨터는 [가위]를 선택했습니다.");
-			if(str == "가위") { System.out.println("비겼습니다.");}
-			else if(str =="바위") {System.out.println("이겼습니다.");
-			} else {System.out.println("졌습니다ㅠㅠ");
-		}
-		}
+		System.out.print("가위/바위/보 중 하나를 입력해주세요 : ");
+		String str = sc.next();
+		
+		
+		switch(g) {
+		case 0 : System.out.println("컴퓨터는 [가위]를 선택했습니다.");
+		 if(str.equals("바위")) {System.out.println("플레이어 승!");
+		 System.out.println("현재 기록 : " + count + "승" + " 무" + " 패");}
+		 else if(str.equals("가위")) {
+		 System.out.println("비겼습니다.");System.out.println("현재 기록 : " + " 승" + count +"무" +  " 패");}
+		 else {
+		 System.out.println("졌습니다.");System.out.println("현재 기록 : " + "승" + " 무" + count + "패");} 
+		 
+		case 1 : System.out.println("컴퓨터는 [바위]를 선택했습니다.");
+		 if(str.equals("바위")) {System.out.println("비겼습니다.");
+		 System.out.println("현재 기록 : " + "승" + count+ "무"  + " 패");
+		 }
+		 else if(str.equals("가위")) {
+		 System.out.println("졌습니다.");System.out.println("현재 기록 : " + "승" + " 무" + count + "패");}
+		 else { 
+		 System.out.println("이겼습니다.");System.out.println("현재 기록 : " + count+ "승" + " 무"  + " 패");}
+		 
+		 default : System.out.println("컴퓨터는 [보]를 선택했습니다.");
+		 if(str.equals("바위")) {System.out.println("졌습니다.");
+		 System.out.println("현재 기록 : " + "승" + " 무" + count + "패");}
+		 else if(str.equals("가위")) {
+		 System.out.println("이겼습니다.");System.out.println("현재 기록 : " + count+ "승" + " 무"  + " 패");}
+		 else { 
+		 System.out.println("비겼습니다.");System.out.println("현재 기록 : " + "승" +  count +"무" + " 패");} }
+	} 
+	}
+		 
+			 
+		 
+	
 		
 		/*
 		0-> 가위
@@ -247,8 +271,7 @@ public class BranchExample {
 		 
 		
 	
-		}	
-}}
+}
 	
 	
 	
