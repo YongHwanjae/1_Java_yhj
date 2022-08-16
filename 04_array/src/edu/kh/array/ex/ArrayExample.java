@@ -206,7 +206,7 @@ public class ArrayExample {
 		////// 배열 응용
 		
 		
-		public void ex7() {
+		public void ex7() { 
 			
 			// 인원 수를 입력 받아 그 크기만큼의 정수 배열을 선언 및 할당
 			// 인원 수만큼 점수를 입력 받아 
@@ -269,7 +269,7 @@ public class ArrayExample {
 			
 			
 		}
-	public void ex8() {
+	public void ex8() { //★
 		
 		// 배열 내 데이터 검색
 		
@@ -466,11 +466,9 @@ public class ArrayExample {
 		// 새로운 배열을 생성하여 그 시작 주소를 arr2에 대입
 		if(arr2 == null) {
 			arr2 = new int[4];
-			
-		}   System.out.println(arr2);
-		
+		}   
+		System.out.println(arr2);		
 	}
-	
 	
 }	
 	
