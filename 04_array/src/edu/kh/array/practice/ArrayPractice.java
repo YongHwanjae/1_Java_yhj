@@ -204,8 +204,7 @@ public class ArrayPractice {
 	
 	}
 	public void practice13() {
-		
-		
+			
 	}
 }
 	
