@@ -184,9 +184,7 @@ public class ArrayExample {
 			
 			System.out.println("배열 길이 : " + arr.length);
 			System.out.println( Arrays.toString(arr));
-			
-
-			
+		
 		}
 	
 		public void ex6() {
