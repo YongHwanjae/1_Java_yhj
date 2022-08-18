@@ -18,7 +18,10 @@ public class ArrayPractice {
 			arr[i] = i+1;
 			
 			System.out.print(arr[i] + " ");
-		}
+			
+			if(i%2==0) {sum += arr[i];
+			} 
+		}System.out.println("\n짝수 번째 인덱스 합 : " + sum);
 					
 		
 		
@@ -27,10 +30,13 @@ public class ArrayPractice {
 		
 	int arr[] = new int[9];
 	
+	int sum = 0;
+	
 	for(int i = arr.length-1; i>=0; i--)
 	{arr[i] = i+1;
 	System.out.print(arr[i] +  " ");
-	}
+	if(i%2==1) { sum += arr[i];}
+	} System.out.println("\n홀수 번째 인덱스 합 : " + sum);
 	
 	}
 	
@@ -55,26 +61,26 @@ public class ArrayPractice {
 	
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("입력 0 : ");
-		int input0 = sc.nextInt();
+		int[] arr = new int[5];
 		
-		System.out.print("입력 1 : ");
-		int input1 = sc.nextInt();
+		for(int i= 0; i<arr.length; i++)
+		{System.out.print("입력 " + i + " : ");
+		arr[i] = sc.nextInt();}
 		
-		System.out.print("입력 2 : ");
-		int input2 = sc.nextInt();
-		
-		System.out.print("입력 3 : ");
-		int input3 = sc.nextInt();
-		
-		System.out.print("입력 4 : ");
-		int input4 = sc.nextInt();
-		
-		int arr[] = {input0, input1, input2, input3, input4};
 		
 		System.out.print("검색할 값 : ");
-		int input = sc.nextInt();
+		int search = sc.nextInt();	
+			
+		boolean flag = false; //일치
+				
 		
+		
+		for(int i = 0; i<arr.length; i++) {
+			if (arr[i] == search) {System.out.println("인덱스 : " + i);
+			flag = true; break;}
+			
+			if(flag){System.out.println("일치하는 값이 존재하지 않습니다.");}
+		}
 	
 			}
 		
@@ -89,7 +95,13 @@ public class ArrayPractice {
 		
 		System.out.print("문자 : ");
 		String input2 = sc.next();
-		}
+		
+		String str = input;
+	    
+		
+		System.out.print(input + "에 " + input2+ "가 존재하는 위치(인덱스) : " );
+		System.out.print("\n" + input2 + " 개수 : ");
+	}
 
 	public void practice6() {
 		
