@@ -117,6 +117,8 @@ public class Member {
 		
 		
 	}
+	
+	
 	// 메서드(기능)
 	
 	
