@@ -7,7 +7,7 @@ public class ArrayExampleRun {
 		
 		
 //		arrayEx.ex1();
-//		arrayEx.ex2();
+		arrayEx.ex2();
 //		arrayEx.ex3();
 //		arrayEx.ex4();
 //		arrayEx.ex5();

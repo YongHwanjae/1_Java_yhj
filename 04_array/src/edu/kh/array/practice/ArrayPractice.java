@@ -194,11 +194,18 @@ public class ArrayPractice {
 			System.out.println("다시 입력하세요");}
 		else { 
 			int[] arr = new int[2*input-1];
-			for(int i = 0; i<arr.length; i++) {
-				arr[i] = i; if(arr[i] < input/2+1) {i--;}
-			
-			System.out.print(arr[i]);}
-		}
+			for(int i = 1; i<=input/2+1; i++) {
+				arr[i] = i; 
+				System.out.print(arr[i] + ", ");}
+				for(int i= input/2; i>=1; i--) {
+					if(i==1) {System.out.print(arr[i]);}
+					else {
+					arr[i]=i;
+					System.out.print(arr[i] + ", ");}
+					
+				}
+			}
+		
 		
 		
 	}
