@@ -1,7 +1,5 @@
 package edu.kh.array.practice;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class ArrayPractice {
@@ -215,11 +213,12 @@ public class ArrayPractice {
 		int[] arr = new int[10];
 		
 		
-		
+		System.out.print("발생한 난수 : ");
 		for(int i = 0; i<arr.length; i++) {
 			int ran = (int)(Math.random()*10 + 1);
-			arr[i] = ran;}
-			System.out.print("발생한 난수 : " + Arrays.toString(arr));
+			arr[i] = ran;
+			System.out.print(arr[i] + " ");}
+			 
 		
 		
 	}
@@ -231,11 +230,12 @@ public class ArrayPractice {
 		
 		int[] arr = new int[10];
 	
-		
+		System.out.print("발생한 난수 : ");
 		for(int i = 0; i<arr.length; i++) {
 			int ran = (int)(Math.random()*10 + 1);
-			arr[i] = ran;}
-	System.out.print("발생한 난수 : " + Arrays.toString(arr));
+			arr[i] = ran;
+			System.out.print(arr[i] + " ");}
+	 
 		
 		int max = arr[0];
 		int min = arr[0];
@@ -249,25 +249,26 @@ public class ArrayPractice {
 		  System.out.print("\n최소값 : " + min);
 	}
 	
-	public void practice11() {
+	public void practice11() { // ＊
 		
 		int[] arr= new int[10];
 		
-		int ran = (int)(Math.random()*10+1);
+		
 		
 		for(int i = 0; i<arr.length; i++) {
+			int ran = (int)(Math.random()*10+1);
 			arr[i] = ran;
 		for(int x = 0; x<i; x++) {
 			if(arr[x] ==ran) {
 				i--; break;
 			}
-		}
-		} System.out.print(Arrays.toString(arr));
+			}
+	System.out.print(arr[i] + " ");} 
 		
 		}
 	
 	
-	public void practice12 () {
+	public void practice12 () { // ＊
 		
 		int[] arr = new int[6];
 		
@@ -278,13 +279,15 @@ public class ArrayPractice {
 				if(arr[x] == ran) {
 				i--; break; 
 			}
-		}}
-		Arrays.sort(arr);
-	
+		}	
+			
+	System.out.print(arr[i] + " ");
+	}
+		}
 	 
-	System.out.println(Arrays.toString(arr));}
 	
-	public void practice13() {
+	
+	public void practice13() { //＊
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -300,7 +303,7 @@ public class ArrayPractice {
 					i--; break;
 				}
 			}
-		} System.out.println("문자열에 있는 문자 : " + Arrays.toString(arr));
+		} System.out.println("문자열에 있는 문자 : " );
 	}
 	
 	
@@ -323,6 +326,7 @@ public class ArrayPractice {
 		
 		for(int row = 0; row<arr.length-1; row++) {
 			for(int col = 0; col<arr[row].length-1; col++) {
+			System.out.print("(" + row + ", " + col + ")");
 			
 				
 			}
@@ -337,10 +341,18 @@ public class ArrayPractice {
 			for(int col = 0; col<arr[row].length-1; col++) {
 				arr[row][col] = i;
 				i++;
-					}
+				System.out.print(i);
+				System.out.println();}
 				}
 			}		
 	public void practice17() {
+		
+	}
+	
+	public void practice18() {
+		int[][] arr= new int [4][4];
+		
+				
 		
 	}
 }
