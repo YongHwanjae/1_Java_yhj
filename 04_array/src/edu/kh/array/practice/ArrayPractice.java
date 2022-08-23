@@ -155,7 +155,20 @@ public class ArrayPractice {
 			int x = sc.nextInt();
 		arr[i] = x; sum+=x;} 
 		System.out.println("\n총 합 : " + sum);
+		/*
+		int[] arr = new int[input];
+		for(int i= 0; i< arr.length; i++) {
+			System.out.print("배열" + i + "번째 인덱스에 넣을 값");
+			arr[i] = sc.nextInt();
+		}
 		
+		int sum = 0;
+		for(int i= 0; i<arr.length; i++) {
+			System.out.print(arr[i] + " ");
+			sum +=arr[i];
+			System.out.println();
+			System.out.println("총 합 : " + sum);
+		}*/
 	}
 	
 	public void practice7() {
