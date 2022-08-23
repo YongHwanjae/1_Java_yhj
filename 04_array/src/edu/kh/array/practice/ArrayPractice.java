@@ -154,7 +154,6 @@ public class ArrayPractice {
 			System.out.print("배열" + i+ "번째 인덱스에 넣을 값 : ");
 			int x = sc.nextInt();
 		arr[i] = x; sum+=x;} 
-		System.out.print(Arrays.toString(arr));
 		System.out.println("\n총 합 : " + sum);
 		
 	}

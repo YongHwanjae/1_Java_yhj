@@ -18,7 +18,7 @@ public class TestRun {
 		
 		Test2 t2 = new Test2();
 		// import 해야지만 에러가 발생하지 않음
-		// -> public clas : 어디서든지 접근 가능
+		// -> public class : 어디서든지 접근 가능
 		//                  == 어디서든지 import 가능
 	
 		
