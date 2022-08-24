@@ -1,5 +1,6 @@
 package edu.kh.array.practice;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ArrayPractice {
@@ -222,7 +223,6 @@ public class ArrayPractice {
 		if(input<3 || input%2==0) {
 			System.out.println("다시 입력하세요");}
 		else { 
-//			int[] arr = new int[2*input-1];
 			int[] arr = new int[input];
 			
 			for(int i = 1; i<=input/2+1; i++) {
@@ -292,16 +292,17 @@ public class ArrayPractice {
 			int ran = (int)(Math.random()*10+1);
 			arr[i] = ran;
 		for(int x = 0; x<i; x++) {
-			if(arr[x] ==ran) {
+			if(arr[i] ==arr[x]) {
 				i--; break;
 			}
 			}
-	System.out.print(arr[i] + " ");} 
-		
+	}for(int i=0; i<arr.length; i++) {
+		System.out.print(arr[i] + " "); 
+	}
 		}
 	
 	
-	public void practice12 () { // ＊
+	public void practice12 () { // **
 		
 		int[] arr = new int[6];
 		
@@ -312,15 +313,15 @@ public class ArrayPractice {
 				if(arr[x] == ran) {
 				i--; break; 
 			}
-		}	
-			
-	System.out.print(arr[i] + " ");
-	}
+		}	}
+			for(int i = 0; i<arr.length; i++) {Arrays.sort(arr);
+	System.out.print(arr[i] + " ");}
+	
 		}
 	 
 	
 	
-	public void practice13() { //＊
+	public void practice13() { //**
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -341,7 +342,7 @@ public class ArrayPractice {
 	
 	
 	
-	public void practice14() {
+	public void practice14() {//***
 		Scanner sc = new Scanner(System.in);
 		System.out.print("배열의 크기를 입력하세요 : ");
 		int input = sc.nextInt();
