@@ -196,20 +196,23 @@ public class ArrayPractice {
 		
 		char[] arr = new char[input.length()];
 		for(int i = 0; i<input.length(); i++) {
+			            // = arr.length();
 			arr[i] = input.charAt(i);
-		}
-		System.out.print("");
-		for(int i = 0; i<8; i++) {
+		
+		/*for(int i = 0; i<8; i++) {
 		System.out.print(arr[i]);
 		} for(int i =8; i<14; i++) {
-			arr[i] = '*';
-			System.out.print(arr[i]);
+			arr[i] = '*';*/
+		if(i<=7) {
+			arr[i] = input.charAt(i);}
+		else { arr[i] = '*';}
+			System.out.print(arr[i]);}
 		
 	}	
 		
-	}
 	
-	public void practice8() {
+	
+	public void practice8() {//*
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -219,7 +222,9 @@ public class ArrayPractice {
 		if(input<3 || input%2==0) {
 			System.out.println("다시 입력하세요");}
 		else { 
-			int[] arr = new int[2*input-1];
+//			int[] arr = new int[2*input-1];
+			int[] arr = new int[input];
+			
 			for(int i = 1; i<=input/2+1; i++) {
 				arr[i] = i; 
 				System.out.print(arr[i] + ", ");}
