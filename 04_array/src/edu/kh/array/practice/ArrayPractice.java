@@ -138,7 +138,7 @@ public class ArrayPractice {
 		
 	}
 
-	public void practice6() {
+	public void practice6() {//*
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -148,14 +148,30 @@ public class ArrayPractice {
 		int input = sc.nextInt();
 		
 		int[] arr = new int[input];
-		int sum = 0;
 		
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print("배열 " + i + "번째 인덱스에 넣을 값 : ");
+            arr[i] = sc.nextInt();
+        }
+
+
+        int sum = 0;
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+            sum += arr[i];
+        }
+
+        System.out.println();
+        System.out.println("총 합 : " + sum);
+		/*
 		for(int i = 0; i<input; i++) {
 			System.out.print("배열" + i+ "번째 인덱스에 넣을 값 : ");
-			int x = sc.nextInt();
-		arr[i] = x; sum+=x;} 
+			int x = sc.nextInt();	
+		arr[i] = x;
+		System.out.print(arr[i]);
+		sum+=x;} 
 		System.out.println("\n총 합 : " + sum);
-		/*
+		
 		int[] arr = new int[input];
 		for(int i= 0; i< arr.length; i++) {
 			System.out.print("배열" + i + "번째 인덱스에 넣을 값");

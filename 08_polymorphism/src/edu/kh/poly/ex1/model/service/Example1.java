@@ -67,7 +67,7 @@ public class Example1 {
     		for(int i=0; i<arr.length; i++) {
     			
     			System.out.println(arr[i]);
-    			
+    			 
     		} // arr[i] == 참조변수
     		 // print()메서드에 참조변수를 작성하면
     		// 자동으로 toString 메서드 호출
@@ -171,7 +171,6 @@ public class Example1 {
 			}
 			
 			
-			
 		}
 	
 		
@@ -187,11 +186,8 @@ public class Example1 {
 			else { //참조하는 객체가 Car인 경우
 				System.out.println("Car는 고유 기능이 없습니다.");
 			}	
-		}
+		}  
 		
 		
-	
-		
-		
-		
+			
 }
