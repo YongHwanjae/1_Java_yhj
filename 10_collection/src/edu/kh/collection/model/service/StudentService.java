@@ -21,7 +21,6 @@ public class StudentService {
 	}
 	
 	
-	
 	/** stdList에 학생 정보 추가 메서드
 	 * @param name
 	 * @param age

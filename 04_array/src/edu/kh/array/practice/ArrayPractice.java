@@ -329,7 +329,7 @@ public class ArrayPractice {
 		String input = sc.nextLine();
 		
 		char[] arr = new char[input.length()];
-		
+		/*
 		for(int i= 0; i<arr.length; i++) {
 			arr[i] = input.charAt(i);
 			for(int x =0; x<i; x++) {
@@ -337,7 +337,32 @@ public class ArrayPractice {
 					i--; break;
 				}
 			}
-		} System.out.println("문자열에 있는 문자 : " );
+		} System.out.println("문자열에 있는 문자 : " );*/
+		
+		for(int i = 0; i<arr.length; i++) {
+			arr[i] = input.charAt(i);
+		}
+		
+		int count =0;
+		System.out.print("문자열에 있는 문자 : ");
+		
+		for(int i=0; i<arr.length; i++) {
+			boolean flag = true; // 중복체크
+			for(int j=0; j<i; j++) {
+				if(arr[i] == arr[j]) {
+					flag = false; // 중복일때
+					break;
+				}
+			}
+			if(flag) { // 중복x
+				if(i==0) {System.out.print(arr[i]);}
+				else {System.out.print(", " + arr[i]);}
+				count++;
+			}
+		}
+		
+		System.out.println();
+		System.out.println("문자 개수 : " + count);
 	}
 	
 	
@@ -346,6 +371,7 @@ public class ArrayPractice {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("배열의 크기를 입력하세요 : ");
 		int input = sc.nextInt();
+		
 		
 		for(int i= 0; i<input; i++) {
 		System.out.print((i+1) +"번째 문자열 : ");
