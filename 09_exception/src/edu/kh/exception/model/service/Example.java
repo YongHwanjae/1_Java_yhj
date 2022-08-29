@@ -163,7 +163,7 @@ public class Example {
 	
 	public void ex6() throws IOException {
 		// -> 해당 메서드에서 발생하는 IOException을
-		//    호출한 메서듣로 던져버림 (책임 전가)
+		//    호출한 메서드로 던져버림 (책임 전가)
 		
 		throw new IOException();
 	

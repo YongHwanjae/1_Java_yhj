@@ -8,7 +8,7 @@ public class UserService {
 	
 	// 반환형이 클래스명 
 	// =반환되는 값이 해당 클래스를 이용해서 만들어진 객체의 주소 값
-	public User sighUP(String userId, String userPw, String userNAme,
+	public User sighUP(String userId, String userPw, String userName,
 			           int userAge, char usergender) {
 		
 		// 기본 생성자를 이용해서 User 객체를 생성
@@ -17,7 +17,7 @@ public class UserService {
 		// setter를 이용해서 매개변수로 전달 받은 값을 생성
 		u.setUserId(userId);
 		u.setUserPw(userPw);
-		u.setUserName(userNAme);
+		u.setUserName(userName);
 		u.setUserAge(userAge);
 		u.setUserGender(usergender);
 	
