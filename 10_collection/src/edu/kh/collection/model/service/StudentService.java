@@ -47,7 +47,7 @@ public class StudentService {
 		Student std = new Student(name, age, address, gender, score);
 		
 		
-		// boolean add(Studnet e) : add() 결과로 boolean 반환
+		// boolean add(Student e) : add() 결과로 boolean 반환
 		return stdList.add(std);
 		}
 		
